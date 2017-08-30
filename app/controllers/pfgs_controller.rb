@@ -9,7 +9,7 @@ class PfgsController < ApplicationController
   def create
     @pfg = Pfg.new(pfg_params)
     if @pfg.save
-      render json: {message: "Created new boot"}
+      render json: {message: "Created new pfg"}
     else
       render json: {message: "Not Created!", status: :unprocessable_entity}
     end
@@ -17,7 +17,7 @@ class PfgsController < ApplicationController
 
   def destroy
     if @pfg.destroy
-      render json: {message: "Removed boot from inventory"}
+      render json: {message: "Removed pfg from inventory"}
     else
       render json: {message: "Had Trouble taking this out of inventory"}
     end

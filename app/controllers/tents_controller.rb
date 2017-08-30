@@ -13,6 +13,7 @@ class TentsController < ApplicationController
     else
       render json: {message: "Not Created!", status: :unprocessable_entity}
     end
+  end
 
     def destroy
       if @boot.destroy
@@ -29,11 +30,13 @@ class TentsController < ApplicationController
     private
 
     def tent_params
-      params.require(:tent).permit(:name, :price, :description, :quantity)
+      binding.pry
+      params.require(:tent).permit(:name, :price, :quantity, :description)
     end
+
+
 
     def get_tent
       @tent = Tent.find(params[:id])
     end
-  end
 end
