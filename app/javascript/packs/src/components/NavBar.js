@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {NavLink} from "react-router-dom";
 import logo from '../logo.svg';
+import '../styles/NavBar.css'
 
 export default class NavBar extends Component {
   render(){

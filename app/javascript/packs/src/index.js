@@ -4,8 +4,12 @@ import './index.css';
 import BaseLayout from './components/BaseLayout';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Test from "./components/Test"
-console.log("This worked");
+import ContactForm from './components/ContactForm';
+import AboutUs from './components/AboutUs';
+import Boots from './components/Boots';
+import Tents from './components/Tents';
+import Pfgs from './components/Pfgs';
+import Home from './components/Home'
 
 ReactDOM.render(<BrowserRouter>
   <BaseLayout>

@@ -3,7 +3,7 @@ import '../styles/App.css';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
-class BaseLayout extends Component {
+export default class BaseLayout extends Component {
   render() {
     return (
       <div className="App">
@@ -14,5 +14,3 @@ class BaseLayout extends Component {
     );
   }
 }
-
-export default App;

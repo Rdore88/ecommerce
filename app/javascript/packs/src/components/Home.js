@@ -5,7 +5,7 @@ export default class Home extends Component {
     return(
       <div className="home-container">
         <h1>Whole Sale Camping Gear!</h1>
-        <h3>We Always have the best geat at the lowest prices</h3>
+        <h3>We Always have the best gear at the lowest prices</h3>
       </div>
     )
   }

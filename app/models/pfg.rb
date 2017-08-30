@@ -1,0 +1,2 @@
+class Pfg < ApplicationRecord
+end

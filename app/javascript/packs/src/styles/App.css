@@ -14,6 +14,10 @@
   color: white;
 }
 
+.NavBar{
+  background-color: blue;
+}
+
 .App-intro {
   font-size: large;
 }
