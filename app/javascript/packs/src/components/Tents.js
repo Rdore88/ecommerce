@@ -9,7 +9,7 @@ export default class Tents extends Component {
   }
 
   componentDidMount(){
-    fetch('/tents').then((response) => {
+    fetch('/api/tents').then((response) => {
       return response.json()
     }).then((data) => {
       this.setState({tents: data});

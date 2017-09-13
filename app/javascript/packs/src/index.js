@@ -9,7 +9,7 @@ import AboutUs from './components/AboutUs';
 import Boots from './components/Boots';
 import Tents from './components/Tents';
 import Pfgs from './components/Pfgs';
-import Home from './components/Home'
+import Home from './components/Home';
 
 ReactDOM.render(<BrowserRouter>
   <BaseLayout>

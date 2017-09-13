@@ -8,7 +8,7 @@ export default class Pfgs extends Component {
   }
 
   componentDidMount(){
-    fetch('/pfgs').then((response) => {
+    fetch('/api/pfgs').then((response) => {
       return response.json()
     }).then((data) => {
       this.setState({pfgs: data});

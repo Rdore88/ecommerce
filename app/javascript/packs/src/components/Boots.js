@@ -9,7 +9,7 @@ export default class Boots extends Component {
   }
 
   componentDidMount(){
-    fetch('/boots').then((response)=> {
+    fetch('/api/boots').then((response)=> {
       return response.json()
     }).then((data) => {
       console.log(data);
