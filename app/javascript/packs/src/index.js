@@ -10,6 +10,7 @@ import Boots from './components/Boots';
 import Tents from './components/Tents';
 import Pfgs from './components/Pfgs';
 import Home from './components/Home';
+import SignUp from './components/Signup';
 
 ReactDOM.render(<BrowserRouter>
   <BaseLayout>
@@ -17,6 +18,7 @@ ReactDOM.render(<BrowserRouter>
       <Route exact path="/" component={Home} />
       <Route path="/contactform" component={ContactForm} />
       <Route path="/aboutus" component={AboutUs} />
+      <Route path="/signup" component={SignUp} />
       <Route path="/boots" component={Boots} />
       <Route path="/tents" component={Tents} />
       <Route path="/pfgs" component={Pfgs} />

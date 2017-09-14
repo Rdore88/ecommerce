@@ -5,7 +5,7 @@ export default class TentCard extends Component {
     let tent = this.props.tent
 
     return(
-      <div className="Tentcard">
+      <div className="card">
         <h2>{tent.name}</h2>
         <h2>{tent.price}</h2>
         <h2>{tent.quantity}</h2>

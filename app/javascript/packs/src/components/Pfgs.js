@@ -7,7 +7,7 @@ export default class Pfgs extends Component {
     this.state = {pfgs: []}
   }
 
-  componentDidMount(){
+  componentWillMount(){
     fetch('/api/pfgs').then((response) => {
       return response.json()
     }).then((data) => {
@@ -26,7 +26,7 @@ export default class Pfgs extends Component {
       )
     })
     return(
-      <div className="PfgContainer">
+      <div className="ItemContainer">
         {pfgs}
       </div>
     )

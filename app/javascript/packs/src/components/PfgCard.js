@@ -5,7 +5,7 @@ export default class PfgCard extends Component {
     let pfg = this.props.pfg
 
     return(
-      <div className="Pfgcard">
+      <div className="card">
         <h2>{pfg.name}</h2>
         <h2>{pfg.price}</h2>
         <h2>{pfg.quantity}</h2>

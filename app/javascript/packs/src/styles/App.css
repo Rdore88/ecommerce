@@ -14,12 +14,42 @@
   color: white;
 }
 
-.NavBar{
-  background-color: blue;
+.upperNavbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Navbar{
+  display: flex;
+}
+
+.navlink{
+  margin: .5em;
+  text-decoration: none;
+  padding: .5em;
+  border: 1px solid black;
+}
+
+.navlink:hover{
+  background-color: red;
 }
 
 .App-intro {
   font-size: large;
+}
+
+.ItemContainer{
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  align-content: center;
+}
+
+.card{
+  padding: 1em;
+  box-shadow: 5px 5px 5px #888888;
+  margin: 1em;
+  align-self: center;
 }
 
 @keyframes App-logo-spin {

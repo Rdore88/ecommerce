@@ -5,7 +5,7 @@ export default class BootCard extends Component {
     let boot = this.props.boot
 
     return(
-      <div className="Bootcard">
+      <div className="card">
         <h2>{boot.name}</h2>
         <h2>{boot.price}</h2>
         <h2>{boot.quantity}</h2>

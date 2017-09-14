@@ -8,7 +8,7 @@ export default class Tents extends Component {
     this.state = {tents: []}
   }
 
-  componentDidMount(){
+  componentWillMount(){
     fetch('/api/tents').then((response) => {
       return response.json()
     }).then((data) => {
@@ -27,7 +27,7 @@ export default class Tents extends Component {
       )
     })
     return(
-      <div className="TentContainer">
+      <div className="ItemContainer">
         {tents}
       </div>
     )

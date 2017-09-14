@@ -8,7 +8,7 @@ export default class Boots extends Component {
     this.state = {boots: []}
   }
 
-  componentDidMount(){
+  componentWillMount(){
     fetch('/api/boots').then((response)=> {
       return response.json()
     }).then((data) => {
@@ -27,7 +27,7 @@ export default class Boots extends Component {
       )
     })
     return(
-      <div className="BootContainer">
+      <div className="ItemContainer">
         {boots}
       </div>
     )
