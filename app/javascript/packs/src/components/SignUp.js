@@ -1,5 +1,5 @@
-import React, {Component} from 'react'
-import {Route, Redirect} from 'react-router'
+import React, {Component} from 'react';
+import {browserHistory} from 'react-router';
 
 export default class SignUp extends Component{
   constructor(props){
@@ -53,7 +53,6 @@ export default class SignUp extends Component{
     })
       .then(function(result){
         alert(result.name)
-        console.log("second then");
       })
       .catch(err=>alert(err.message))
   }
