@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import TentCard from './TentCard'
+import DataCard from './DataCard'
 
 export default class Tents extends Component {
   constructor(props){
@@ -22,7 +22,7 @@ export default class Tents extends Component {
     let tents = this.state.tents.map((tent, i) => {
       return (
         <div key={i}>
-          <TentCard tent={tent} />
+          <DataCard data={tent} />
         </div>
       )
     })

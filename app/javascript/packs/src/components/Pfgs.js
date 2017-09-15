@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import PfgCard from './PfgCard';
+import DataCard from './DataCard';
 
 export default class Pfgs extends Component {
   constructor(props){
@@ -21,7 +21,7 @@ export default class Pfgs extends Component {
     let pfgs = this.state.pfgs.map((pfg, i) => {
       return (
         <div key={i}>
-          <PfgCard pfg={pfg} />
+          <DataCard data={pfg} />
         </div>
       )
     })

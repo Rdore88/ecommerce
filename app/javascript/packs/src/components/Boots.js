@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import BootCard from './BootCard';
+import DataCard from './DataCard';
 
 export default class Boots extends Component {
   constructor(props){
@@ -22,7 +22,7 @@ export default class Boots extends Component {
     let boots = this.state.boots.map((boot, i) => {
       return (
         <div key={i}>
-          <BootCard boot={boot} />
+          <DataCard data={boot} />
         </div>
       )
     })

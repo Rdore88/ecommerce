@@ -33,6 +33,7 @@ export default class SignUp extends Component{
   }
 
   handleSubmit(e){
+    e.preventDefault()
     var payload = {
       user: {
         name: this.state.name,
@@ -43,16 +44,18 @@ export default class SignUp extends Component{
     }
     fetch('/api/users', {
       method: 'POST',
+      body: JSON.stringify(payload),
       headers: {
         'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(payload)
-    }).then(function(response){
-      console.log("first then");
-      return response.json();
+      }
+    }).then( (response) => {
+      return response.json()
     })
-      .then(function(result){
-        alert(result.name)
+      .then(
+        (result) => {
+          console.log(result.message);
+          alert(result.message)
+          // this.context.router.history.push('/');
       })
       .catch(err=>alert(err.message))
   }
@@ -74,4 +77,8 @@ export default class SignUp extends Component{
       </form>
     )
   }
+}
+
+SignUp.contextTypes = {
+  router: React.PropTypes.object.isRequired
 }
